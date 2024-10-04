@@ -3,32 +3,64 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bài kiểm tra số 1 - Nguyễn Hoàng Tùng su doi</title>
+    <title>Bài kiểm tra số 1 - Nguyễn Hoàng Tùng</title>
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid black;
+      }
+    </style>
   </head>
   <body>
     <form action="">
-      <table border="1" width="500" cellpadding="10">
+      <table style="width: 500px" cellpadding="10">
         <tr>
-          <th colspan="2">
-            <h2>ĐĂNG KÝ</h2>
-          </th>
+          <th colspan="2">ĐĂNG KÝ</th>
         </tr>
         <tr>
           <td>
-            <label for="name">Họ tên</label>
+            <label for="fname">Họ tên</label>
           </td>
-          <td>
-            <input type="text" id="name" name="ho_ten" placeholder="ho ten" />
-          </td>
-        </tr>
-        <tr>
-          <td><label for="name">Username</label></td>
           <td>
             <input
               type="text"
-              name="username"
-              placeholder="Nhập tên đăng nhập"
+              id="fname"
+              name="fname"
+              placeholder="Nhap ho ten"
             />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="username">Username</label>
+          </td>
+          <td>
+            <input
+              type="text"
+              id="username"
+              name="username"
+              placeholder="nhap username"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="password">Mật khẩu</label>
+          </td>
+          <td>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="nhap password"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="avatar">Avatar</label></td>
+          <td>
+            <input type="file" name="upload" id="avatar" />
           </td>
         </tr>
       </table>
